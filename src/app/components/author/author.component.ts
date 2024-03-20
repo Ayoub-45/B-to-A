@@ -9,6 +9,7 @@ import { NgFor } from '@angular/common';
   styleUrl: './author.component.css',
 })
 export class AuthorComponent {
+  isActive=true;
   authors;
   authorService = inject(AuthorService);
   constructor() {

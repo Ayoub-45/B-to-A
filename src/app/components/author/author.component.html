@@ -1,4 +1,4 @@
 <ul>
   <li *ngFor="let author of authors">{{ author }}</li>
 </ul>
-<button class="btn btn-primary">Signature</button>
+<button class="btn btn-primary" [class.active]="isActive">Signature</button>
