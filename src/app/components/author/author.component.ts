@@ -15,4 +15,11 @@ export class AuthorComponent {
   constructor() {
     this.authors = this.authorService.getAuthors();
   }
+  onSave($event: any): void {
+    $event.stopPropgation();
+    console.log('Button was clicked', $event);
+  }
+  onKeyUp(email: string): void {
+    alert('Submitting ... with ' + email);
+  }
 }
