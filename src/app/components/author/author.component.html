@@ -11,4 +11,7 @@
 </button>
 <br />
 <br />
-<input #email type="text" (keyup.enter)="onKeyUp(email.value)" />
+<input [(ngModel)]="email" type="text" (keyup.enter)="onKeyUp(email)" />
+<p>
+  {{ text | summary : 10 }}
+</p>
