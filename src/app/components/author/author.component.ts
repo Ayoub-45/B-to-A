@@ -2,11 +2,12 @@ import { Component, inject } from '@angular/core';
 import { AuthorService } from '../../services/author.service';
 import { NgFor } from '@angular/common';
 import { FormsModule } from '@angular/forms';
-import { SummaryPipe } from '../../summary.pipe';
+import { SummaryPipe } from '../../pipes/summary.pipe';
+import { ToTitleCasePipe } from '../../pipes/to-title-case.pipe';
 @Component({
   selector: 'app-author',
   standalone: true,
-  imports: [NgFor, FormsModule, SummaryPipe],
+  imports: [NgFor, FormsModule, SummaryPipe, ToTitleCasePipe],
   templateUrl: './author.component.html',
   styleUrl: './author.component.css',
 })

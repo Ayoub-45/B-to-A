@@ -6,6 +6,6 @@ import { Injectable } from '@angular/core';
 export class AuthorService {
   constructor() {}
   getAuthors(): string[] {
-    return ['Ayoub', 'Ghaza'];
+    return ['ayoub', 'ghaza'];
   }
 }
